@@ -6,7 +6,12 @@
     --stndrd-fnt-sz: 1.8rem;
 
     --main-bckgrnd: rgba(226, 242, 237, 0.77);
+
+    --font-choice: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
 
 /*  =========================  
         SECTION
@@ -53,7 +58,28 @@ footer {
 #myBio {
     height: 100%;
     width: 98%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#myBio img {
+    max-width: 298px;
+    max-height: 448px;
+    width: auto;
+    height: auto;
+}
+
+#myBio a {
+    font-size: var(--h2-fnt-sz);
+    text-decoration: none;
+    color: rgb(29, 14, 14);
+    font-family: var(--font-choice);
+    padding: 1rem;
+}
+
 #border {
     background: rgba(123, 155, 145, .5);
     height: 100%;
@@ -64,6 +90,21 @@ footer {
 
 }
 
+#Chicago {
+    background-image: url("../images/chicago.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    z-index: -1;
+}
+
+#Chicago h1 {
+    font-size: var(--h1-fnt-sz);
+    color: red;
+    z-index: 99;
+}
+
 .wowz {
     font-size: .5rem;
     height: 4vh;
@@ -71,7 +112,7 @@ footer {
     border-color: rgba(68, 97, 88, .05);
     border-radius: 1rem;
     margin: .2rem;
-    transition: height 2s, font-size 2s;
+    transition: height 1s, font-size 1s;
     transition-timing-function: ease-in-out;
     display: flex;
     justify-content: space-around;
@@ -79,7 +120,7 @@ footer {
 }
 
 .thumbnail {
-    transition: transform 2s, margin 2s;
+    transition: transform 1s, margin 1s;
     transition-timing-function: ease-in-out;
 }
 
