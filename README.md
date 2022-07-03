@@ -19,7 +19,7 @@ just look at the website with you eyeballs
 ## VISIT:
 You can view the website hosted from GitHub by visiting the link:
 
-->Broken Link
+[Click here to check it out](https://lawhornmatt.github.io/Ch2_MyPortfolio/)
 
 ## SCREENSHOT:
 Can't screenshot what dont exist yet
