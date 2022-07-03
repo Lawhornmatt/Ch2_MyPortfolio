@@ -4,6 +4,9 @@
     --h1-fnt-sz: 3.2rem;
     --h2-fnt-sz: 2.6rem;
     --stndrd-fnt-sz: 1.8rem;
+
+    --bckgrn-left: linear-gradient(to left, rgb(1, 92, 57), white, white, white);
+    --bckgrn-right: linear-gradient(to right, rgb(1, 92, 57), white, white, white);
 }
 
 /*  =========================  
@@ -17,25 +20,34 @@ html {
 body {
     margin: 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* body div{
 
 } */
 
-#Div1 {
-    background: red;
+section {
+    width: 98.5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
     border: solid;
-    width: 40vw;
+}
+
+#Div1 {
+    background: var(--bckgrn-left);
+    /* border: solid; */
+    width: 40%;
     min-height: 100vh;
+
 
 
 }
 #Div2 {
-    background: blue;
-    border: solid;
-    width: 60vw;
+    background: var(--bckgrn-right);
+    /* border: solid; */
+    width: 60%;
 
     display: flex;
     flex-direction: column;
