@@ -1,7 +1,67 @@
 :root {
     --font-colr: white;
+
+    --h1-fnt-sz: 3.2rem;
+    --h2-fnt-sz: 2.6rem;
+    --stndrd-fnt-sz: 1.8rem;
 }
 
 /*  =========================  
-        HEADER SECTION
+        SECTION
     ========================= */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* body div{
+
+} */
+
+#Div1 {
+    background: red;
+    border: solid;
+    width: 40vw;
+    min-height: 100vh;
+
+
+}
+#Div2 {
+    background: blue;
+    border: solid;
+    width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wowz {
+    font-size: .5rem;
+    height: 4vh;
+    border: solid;
+    margin: .2rem;
+    transition: height 2s, font-size 2s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.wowz:hover {
+    font-size: 3rem;
+    height: 20vh;
+    align-items: start;
+    
+}
+
+footer {
+    margin-top: bottom;
+}
