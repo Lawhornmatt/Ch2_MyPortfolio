@@ -20,6 +20,8 @@ body {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    background: var(--main-bckgrnd);
+
 }
 
 section {
@@ -27,7 +29,6 @@ section {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    border: solid;
 }
 
 footer {
@@ -35,17 +36,12 @@ footer {
 }
 
 #Div1 {
-    background: var(--main-bckgrnd);
-    /* border: solid; */
     width: 40%;
     min-height: 100vh;
-
-
-
+    display: flex;
+    justify-content: space-between;
 }
 #Div2 {
-    background: var(--main-bckgrnd);
-    /* border: solid; */
     width: 60%;
 
     display: flex;
@@ -53,18 +49,27 @@ footer {
     justify-content: center;
     min-height: 100vh;
 }
-#artLeft {
-    background: green;
-}
 
-#artRight {
+#myBio {
+    height: 100%;
+    width: 98%;
+}
+#border {
+    background: rgba(123, 155, 145, .5);
+    height: 100%;
+    width: 1%;
+    border: groove;
+    border-color: rgba(68, 97, 88, .1);
+    border-radius: 1rem;
 
 }
 
 .wowz {
     font-size: .5rem;
     height: 4vh;
-    border: solid;
+    border: ridge;
+    border-color: rgba(68, 97, 88, .05);
+    border-radius: 1rem;
     margin: .2rem;
     transition: height 2s, font-size 2s;
     transition-timing-function: ease-in-out;
