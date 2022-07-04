@@ -218,17 +218,13 @@ footer {
     margin: 0 7rem 0 0;
 }
 
-#Field {
+#CURRENT {
     width: 98.5vw;
     height: 100vh;
 
     display: grid;
     grid: repeat(4, 1fr) / repeat(4, 1fr);
     gap: 1rem;
-
-    
-    border: solid;
-    border-color: blue;
 }
 
 .projHeader {
@@ -247,8 +243,7 @@ footer {
     font-family: var(--font-choice);
     font-size: var(--h2-fnt-sz);
 }
-
-.shadowBox {
+.shadowHeader {
     background: var(--old-bckgrnd-drk);
     grid-row-start: 1;
     grid-row-end: span 1;
@@ -260,5 +255,87 @@ footer {
     position: relative;
     left: 50px;
     top: 10px;
+    clip-path: polygon(25% 0, 100% 0, 100% 90%, 75% 100%, 0 100%, 0 10%);
+}
 
+.projBox {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+
+    background: var(--old-bckgrnd);
+    min-height: 30%;
+    max-height: 40%;
+    min-width: 70%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    text-indent: 2rem;
+    font-family: var(--font-choice);
+    font-size: var(--h2-fnt-sz);
+
+    padding: .5rem;
+}
+
+.projBox p {
+    margin-left: 3rem;
+}
+
+.shadowProj {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+
+    background: var(--old-bckgrnd-drk);
+    max-height: 85%;
+    width: auto;
+    z-index: -99;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    clip-path: polygon(55% 0, 85% 0, 85% 85%, 50% 100%, 0 100%, 0 75%);
+}
+
+.projOutro {
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+
+    background: var(--old-bckgrnd);
+    min-height: 30%;
+    max-height: auto;
+    min-width: 70%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    text-indent: 2rem;
+    font-family: var(--font-choice);
+    font-size: var(--stndrd-fnt-sz);
+
+    padding: .5rem;
+}
+
+.shadowOutro {
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+
+    background: var(--old-bckgrnd-drk);
+    max-height: 85%;
+    width: auto;
+    z-index: -99;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    clip-path: polygon(16% 0, 59% 0, 84% 93%, 50% 100%, 4% 100%, 0 55%);
 }
