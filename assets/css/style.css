@@ -5,7 +5,13 @@
     --h2-fnt-sz: 2.6rem;
     --stndrd-fnt-sz: 1.8rem;
 
-    --main-bckgrnd: rgba(226, 242, 237, 0.77);
+    --main-bckgrnd: rgba(14, 20, 20, 1);
+    --secondary: rgba(190, 110, 15, 1);
+    --secondary-drk: rgb(82, 53, 19);
+    --old-bckgrnd: rgba(226, 242, 237, 0.77);
+    --main-bckgrnd-clr: rgba(226, 242, 237, 0.27);
+    --main-bckgrnd-fdd: rgba(226, 242, 237, 0.77);
+    --drk-bckgrnd: rgba(111, 15, 15, .9);
 
     --font-choice: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -21,12 +27,15 @@ html {
     font-size: 62.5%;
 }
 
+/* Learned how to do fade via resource: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/#:~:text=Use%20animation%20and%20transition%20property,the%20opacity%20set%20to%201. */
 body {
     margin: 0px;
     display: flex;
     flex-direction: column;
     background: var(--main-bckgrnd);
 
+    opacity: 0;
+    transition: opacity 2s;
 }
 
 section {
@@ -38,6 +47,20 @@ section {
 
 footer {
     margin-top: bottom;
+}
+
+#Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: var(--font-choice);
+    font-size: 4rem;
+    color: black;
+    text-shadow: 2px 2px var(--old-bckgrnd);
+
+
+    margin-left: 5rem;
 }
 
 #Div1 {
@@ -75,9 +98,16 @@ footer {
 #myBio a {
     font-size: var(--h2-fnt-sz);
     text-decoration: none;
-    color: rgb(29, 14, 14);
+    color: var(--old-bckgrnd);
     font-family: var(--font-choice);
     padding: 1rem;
+    /* border-style: none solid none none;
+    border-color: var(--secondary); */
+    /* text-shadow: 1px 1px rgb(114, 102, 89); */
+}
+
+#myBio a:hover {
+    color: var(--secondary);
 }
 
 #border {
@@ -90,33 +120,80 @@ footer {
 
 }
 
-#Chicago {
+#STORY {
     background-image: url("../images/chicago.jpeg");
     background-size: cover;
     background-position: center;
     width: 100%;
     margin: 2rem 0 2rem 0;
     z-index: -1;
+
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-#Chicago h1 {
+.introBorder {
+    background: var(--secondary);
+    min-height: 40vh;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: none solid solid none;
+    border-width: 1rem;
+    border-color: var(--secondary-drk);
+
+}
+
+.linkBorder {
+    background: var(--secondary);
+    padding: 2px;
+    margin: 3px;
+}
+
+.fadeBorder {
+    background: var(--main-bckgrnd-clr);
+    margin: 10rem;
+    max-height: 30vh;
+}
+
+.fadeBorder aside {
+    max-width: 25vw;
+}
+.fadeBorder aside h1 {
     font-size: var(--h1-fnt-sz);
-    color: red;
-    z-index: 99;
+    font-family: var(--font-choice);
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+.fadeBorder aside p {
+    background: var(--main-bckgrnd-fdd);
+    font-size: var(--stndrd-fnt-sz);
 }
 
 .wowz {
-    font-size: .5rem;
+    font-weight: bold;
     height: 4vh;
     border: ridge;
-    border-color: rgba(68, 97, 88, .05);
+    border-color: rgba(68, 97, 88, .5);
     border-radius: 1rem;
     margin: .2rem;
-    transition: height 1s, font-size 1s;
+    transition: height 1s, font-size 1s, background-color 1s;
     transition-timing-function: ease-in-out;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--old-bckgrnd);
+}
+
+.wowz a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.wowz a:visited {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .thumbnail {
@@ -125,8 +202,9 @@ footer {
 }
 
 .wowz:hover {
-    font-size: 3rem;
+    font-size: 3.5rem;
     height: 20vh;   
+    background-color: var(--secondary);
 }
 .wowz:hover >.thumbnail{
     transform: scale(20);
