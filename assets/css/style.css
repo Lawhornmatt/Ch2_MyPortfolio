@@ -9,6 +9,7 @@
     --secondary: rgba(190, 110, 15, 1);
     --secondary-drk: rgb(82, 53, 19);
     --old-bckgrnd: rgba(226, 242, 237, 0.77);
+    --old-bckgrnd-drk: rgb(28, 44, 39);
     --main-bckgrnd-clr: rgba(226, 242, 237, 0.27);
     --main-bckgrnd-fdd: rgba(226, 242, 237, 0.77);
     --drk-bckgrnd: rgba(111, 15, 15, .9);
@@ -58,7 +59,6 @@ footer {
     font-size: 4rem;
     color: black;
     text-shadow: 2px 2px var(--old-bckgrnd);
-
 
     margin-left: 5rem;
 }
@@ -130,6 +130,8 @@ footer {
 
     display: flex;
     flex-direction: row-reverse;
+
+    text-indent: 2.5rem;
 }
 
 .introBorder {
@@ -142,8 +144,13 @@ footer {
     border-style: none solid solid none;
     border-width: 1rem;
     border-color: var(--secondary-drk);
-
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 10% 100%, 0 75%);
 }
+
+.introBorder h1 {
+    margin-left: 3rem;
+}
+
 
 .linkBorder {
     background: var(--secondary);
@@ -209,4 +216,49 @@ footer {
 .wowz:hover >.thumbnail{
     transform: scale(20);
     margin: 0 7rem 0 0;
+}
+
+#Field {
+    width: 98.5vw;
+    height: 100vh;
+
+    display: grid;
+    grid: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 1rem;
+
+    
+    border: solid;
+    border-color: blue;
+}
+
+.projHeader {
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+
+    background: var(--old-bckgrnd);
+    min-height: 20%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-choice);
+    font-size: var(--h2-fnt-sz);
+}
+
+.shadowBox {
+    background: var(--old-bckgrnd-drk);
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    max-height: auto;
+    width: auto;
+    z-index: -99;
+    position: relative;
+    left: 50px;
+    top: 10px;
+
 }
