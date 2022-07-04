@@ -48,6 +48,14 @@ section {
 
 footer {
     margin-top: bottom;
+    background: var(--old-bckgrnd-drk);
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+footer p {
+    color: var(--old-bckgrnd);
+    font-size: var(--stndrd-fnt-sz);
 }
 
 #Intro {
@@ -338,4 +346,78 @@ footer {
     left: 50px;
     top: 10px;
     clip-path: polygon(16% 0, 59% 0, 84% 93%, 50% 100%, 4% 100%, 0 55%);
+}
+
+#CONTACT {
+    width: 98.5vw;
+    height: 100vh;
+
+    display: grid;
+    grid: 1rem 1fr / repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.vertDivider {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+
+    background: rgba(123, 155, 145, .5);
+    height: auto;
+    width: 100%;
+    border: groove;
+    border-color: rgba(68, 97, 88, .1);
+    border-radius: 1rem;
+}
+
+#contactPhoto {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 1;
+
+    align-self: center;
+    justify-self: center;
+}
+
+#holdContact {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+
+    margin: 5rem;
+
+    background: var(--old-bckgrnd-drk);
+
+    font-size: var(--h1-fnt-sz);
+    font-family: var(--font-choice);
+
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0 0 5rem;
+
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 14% 100%, 0 73%);
+
+}
+
+#holdContact ul {
+    background: var(--old-bckgrnd);
+    max-width: 60%;
+    position: relative;
+    left: 5rem;
+    list-style: none;
+    padding: 5rem 0 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#holdContact h1 {
+    text-shadow: 2px 2px var(--old-bckgrnd);
+}
+
+#holdContact a:link {
+    text-decoration: inherit;
+    color: inherit;
 }
