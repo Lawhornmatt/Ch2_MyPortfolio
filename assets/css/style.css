@@ -333,7 +333,7 @@ footer p {
     margin-left: 3rem;
 }
 
-.shadowProj {
+.shadowBox {
     grid-row-start: 2;
     grid-row-end: span 2;
     grid-column-start: 2;
@@ -372,7 +372,6 @@ footer p {
     background: var(--old-bckgrnd);
     font-family: var(--font-choice);
     font-size: var(--stndrd-fnt-sz);
-
 }
 
 .shadowOutro {
@@ -391,14 +390,37 @@ footer p {
     clip-path: polygon(16% 0, 59% 0, 84% 93%, 50% 100%, 4% 100%, 0 55%);
 }
 
+@media screen and (max-width: 600px) {
+
+    .projHeader {    
+        grid-column-end: span 4;    
+    }
+    
+    .projBox {    
+        grid-column-start: 1;
+        grid-column-end: span 4;
+    }
+
+    .shadowBox {
+        grid-column-start: 1;
+    }
+    
+    .projOutro {   
+        grid-column-start: 1; 
+        grid-column-end: span 4;
+    }
+
+    .shadowOutro {
+        grid-column-start: 1;
+    }
+    
+    }
+
 /*  =========================  
         CONTACT ME
     ========================= */
 
 #CONTACT {
-    width: 98.5vw;
-    height: 100vh;
-
     display: grid;
     grid: 1rem 1fr / repeat(3, 1fr);
     gap: 1rem;
@@ -426,6 +448,8 @@ footer p {
 
     align-self: center;
     justify-self: center;
+
+    max-width: 373px;
 }
 
 #holdContact {
@@ -469,6 +493,28 @@ footer p {
 #holdContact a:link {
     text-decoration: inherit;
     color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+#CONTACT{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactPhoto {
+    max-width: 200px;
+}
+
+#holdContact{
+    clip-path: none;
+    margin: 0;
+    padding: 0rem;
+}
+
+#holdContact ul {
+    padding: 0rem;
+    max-width: 100%;
+}
 }
 
 /*  =========================  
