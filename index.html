@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<!-- Body had onload so website fades into view upon loading -->
+<!-- Body has onload so website fades into view upon loading -->
 <body onload="document.body.style.opacity='1'">
 
 <!--    =========================    
         INTRO SPLASH
         ToDo: Use JavaScript to move viewer automatically to Homepage after initial delay       
     ==========================  -->
-    <section id="Intro">
+    <section id="INTRO">
         <div class="introBorder">
             <h1 style="font-size: 3.5rem">Full-stack Webdev</h1>
             <h1>Matthew Lawhorn</h1>
@@ -27,12 +27,14 @@
             HOMEPAGE      
         ==========================  -->
      
-    <section id="Homepage">
+    <section id="HOMEPAGE">
+
 <!--       Div1: Contains myBio with pic and nav links      
-        ==========================  -->   
+        ==========================  -->         
         <div id="Div1">
+
             <article id="myBio">
-                <img src="./assets/images/MHS_373x560.jpg" alt="Picture of me face" height="260px" width="73px">
+                <img src="./assets/images/MHS_373x560.jpg" alt="Me doing Joey from Friends' serious acting face" height="260px" width="73px">
 
                 <a href="#STORY">My Story</a>
                 <a href="#CURRENT">What's in Progress</a>
@@ -40,11 +42,13 @@
             </article>
 
             <article id="homepageBorder"></article>
+
         </div>
         
 <!--       Div2: Contains wowz containers with links to completed projects   
         ==========================  -->  
         <div id="Div2">
+
             <div class="wowz"> 
                 <a class="nostyle" href="./proj_indx/proj1_index.html">Project 1: Lorem Ipsum</a>
                 <img src="./assets/images/BrandAwar.png" alt="Silly Clip Art" width="10" height="10" class="thumbnail">
@@ -81,6 +85,7 @@
                 <a class="nostyle" href="./proj_indx/proj1_index.html">Project 9: Jorem Upsum</a>
                 <img src="./assets/images/LeadGen.png" alt="Silly Clip Art" width="10" height="10" class="thumbnail">
             </div>
+
         </div>
 
     </section>
@@ -90,52 +95,52 @@
         ==========================  -->
 
     <section>
-
         <div id="STORY">
+
             <div class="fadeBorder">
                 <aside>
                     <h1>My Story:</h1>
                     <p>I am a student currently enrolled at the UT Coding Bootcamp. I have a Bachelors of Science in Geology from the University of Texas at El Paso.</p>
                     <p>I spend my time discovering new web development tricks and tinkering with code. I live with my amazing partner and a malevolent cat.</p>
                 </aside>
-            </div>    
-        </div>
+            </div>  
 
+        </div>
     </section>
 
 <!--    =========================    
             CURRENT PROJECTS      
         ==========================  -->
-    <section>
-    <div id="CURRENT">
 
-        <!-- Header  -->
-        <div class="projHeader">
-            <h1>Projects in motion:</h1> 
-        </div>
-        <div class="shadowHeader"></div>
+    <section id="CURRENT">
 
-        <!-- Current Proj -->
-        <div class="projBox">
-            <p>Currently I am working on getting a coding certificate from the UT Coding Bootcamp Summer/Winter 2022.</p>
-            <br>
-            <p>Everything will be done December 6th - wish me luck!</p>
-        </div>
-        <div class="shadowProj"></div>
+            <!-- Header  -->
+            <div class="projHeader">
+                <h1>Projects in motion:</h1> 
+            </div>
+            <div class="shadowHeader"></div>
 
-        <!-- Redirect folks to homepage if they want completed projects  -->
-        <div class="projOutro">
-            <h2>Older Projects -</h2>
-            <p>Click on any of the links on the main page to see my completed works</p>
-        </div>
-        <div class="shadowOutro"></div>
+            <!-- Current Proj -->
+            <div class="projBox">
+                <p>Currently I am working on getting a coding certificate from the UT Coding Bootcamp Summer/Winter 2022.</p>
+                <br>
+                <p>Everything will be done December 6th - wish me luck!</p>
+            </div>
+            <div class="shadowProj"></div>
 
-    </div>
+            <!-- Redirect folks to homepage if they want completed projects  -->
+            <div class="projOutro">
+                <h2>Older Projects -</h2>
+                <p>Click on any of the links on the main page to see my completed works</p>
+            </div>
+            <div class="shadowOutro"></div>
+
     </section>
 
 <!--    =========================    
             CONTACT ME      
         ==========================  -->
+
     <section id="CONTACT">
 
         <div class="vertDivider"></div>
@@ -159,7 +164,7 @@
 <!--    =========================    
             FOOTER      
         ==========================  -->
-        
+
     <Footer>
         <p>Designed by Matt Lawhorn | July 2022</p>
     </Footer>
