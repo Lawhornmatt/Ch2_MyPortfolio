@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
-
 </head>
 
-<!--    =========================    
-            SECTION       
-        ==========================  -->
-
+<!-- Body had onload so website fades into view upon loading -->
 <body onload="document.body.style.opacity='1'">
+
+<!--    =========================    
+        INTRO SPLASH
+        ToDo: Use JavaScript to move viewer automatically to Homepage after initial delay       
+    ==========================  -->
     <section id="Intro">
-            <div class="introBorder">
+        <div class="introBorder">
             <h1 style="font-size: 3.5rem">Full-stack Webdev</h1>
             <h1>Matthew Lawhorn</h1>
-            </div>
+        </div>
     </section>
-    <section>
+
+<!--    =========================    
+            HOMEPAGE      
+        ==========================  -->
+     
+    <section id="Homepage">
+<!--       Div1: Contains myBio with pic and nav links      
+        ==========================  -->   
         <div id="Div1">
             <article id="myBio">
                 <img src="./assets/images/MHS_373x560.jpg" alt="Picture of me face" height="260px" width="73px">
@@ -30,15 +37,13 @@
                 <a href="#STORY">My Story</a>
                 <a href="#CURRENT">What's in Progress</a>
                 <a href="#CONTACT">Contact Me</a>
-                
             </article>
 
-            <article id="border">
-
-            </article>
+            <article id="homepageBorder"></article>
         </div>
         
-
+<!--       Div2: Contains wowz containers with links to completed projects   
+        ==========================  -->  
         <div id="Div2">
             <div class="wowz"> 
                 <a class="nostyle" href="./proj_indx/proj1_index.html">Project 1: Lorem Ipsum</a>
@@ -76,10 +81,13 @@
                 <a class="nostyle" href="./proj_indx/proj1_index.html">Project 9: Jorem Upsum</a>
                 <img src="./assets/images/LeadGen.png" alt="Silly Clip Art" width="10" height="10" class="thumbnail">
             </div>
-
         </div>
 
     </section>
+
+<!--    =========================    
+            MY STORY      
+        ==========================  -->
 
     <section>
 
@@ -87,38 +95,49 @@
             <div class="fadeBorder">
                 <aside>
                     <h1>My Story:</h1>
-                    <p>
-                        I am a student currently enrolled at the UT Coding Bootcamp. I have a Bachelors of Science in Geology from the University of Texas at El Paso. 
-                    </p>
+                    <p>I am a student currently enrolled at the UT Coding Bootcamp. I have a Bachelors of Science in Geology from the University of Texas at El Paso.</p>
                     <p>I spend my time discovering new web development tricks and tinkering with code. I live with my amazing partner and a malevolent cat.</p>
                 </aside>
-            </div>
-            
+            </div>    
         </div>
 
     </section>
 
-<!-- Section dedicated to what I am working on now -->
+<!--    =========================    
+            CURRENT PROJECTS      
+        ==========================  -->
+    <section>
     <div id="CURRENT">
+
+        <!-- Header  -->
         <div class="projHeader">
             <h1>Projects in motion:</h1> 
         </div>
         <div class="shadowHeader"></div>
+
+        <!-- Current Proj -->
         <div class="projBox">
             <p>Currently I am working on getting a coding certificate from the UT Coding Bootcamp Summer/Winter 2022.</p>
             <br>
             <p>Everything will be done December 6th - wish me luck!</p>
         </div>
         <div class="shadowProj"></div>
+
+        <!-- Redirect folks to homepage if they want completed projects  -->
         <div class="projOutro">
             <h2>Older Projects -</h2>
             <p>Click on any of the links on the main page to see my completed works</p>
         </div>
         <div class="shadowOutro"></div>
-    </div>
 
-    <!-- Contact Me Section -->
+    </div>
+    </section>
+
+<!--    =========================    
+            CONTACT ME      
+        ==========================  -->
     <section id="CONTACT">
+
         <div class="vertDivider"></div>
         <div id="holdContact">
             <h1>Contact Me</h1>
@@ -134,9 +153,13 @@
             </ul>
         </div>
         <img src="./assets/images/hiking.jpg" alt="Good lookin photo of me :)" height="560" width="373" id="contactPhoto"> 
+
     </section>
 
-    <!-- This section is the footer  -->
+<!--    =========================    
+            FOOTER      
+        ==========================  -->
+        
     <Footer>
         <p>Designed by Matt Lawhorn | July 2022</p>
     </Footer>
