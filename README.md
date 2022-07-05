@@ -6,15 +6,13 @@ This is a website featuring all the projects I've completed. It showcases:
 
 * HTML
 * CSS
-* JAVASCRIPT
-etc. etc.
+* and mock up sites where my completed projects will *eventually* go
 
 ## VERSATILITY
 Full-stack development!
 
-
 ## HOW TO:
-just look at the website with you eyeballs
+Visit the link and read about me on either Desktop or a mobile device.
 
 ## VISIT:
 You can view the website hosted from GitHub by visiting the link:
@@ -22,7 +20,7 @@ You can view the website hosted from GitHub by visiting the link:
 [Click here to check it out](https://lawhornmatt.github.io/Ch2_MyPortfolio/)
 
 ## SCREENSHOT:
-Can't screenshot what dont exist yet
+<img src="./assets/images/Ch2_Screenshot.png" alt="Screenshot of someone about to check out a project" />
 
 ## CREDIT:
-Matthew Lawhorn, date: TBA
+Matthew Lawhorn, July 2022

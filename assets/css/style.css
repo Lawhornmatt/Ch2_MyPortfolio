@@ -454,6 +454,10 @@ footer p {
     text-overflow: ellipsis;
 }
 
+.wowz{
+    height: 8vh;
+}
+
 .wowz:hover {
     font-size: 2rem;
 }
