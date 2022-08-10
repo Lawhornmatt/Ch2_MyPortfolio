@@ -91,6 +91,12 @@ footer p {
         HOMEPAGE
     ========================= */
 
+.pic-styling {
+    height: 260px;
+    width: 73px;
+    border-radius: 1rem;
+}
+
 #Div1 {
     width: 40%;
     min-height: 100vh;
@@ -184,7 +190,7 @@ footer p {
     background-color: var(--secondary);
 }
 .wowz:hover >.thumbnail{
-    transform: scale(20);
+    transform: scale(1.5);
     margin: 0 7rem 0 0;
 }
 
